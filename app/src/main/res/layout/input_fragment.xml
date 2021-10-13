@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Enter first person Name"
+        android:ems="10"
+        android:id="@+id/name1"
+        android:layout_marginTop="84dp"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/find"
+        android:layout_toStartOf="@+id/find" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Enter second person Name"
+        android:ems="10"
+        android:id="@+id/name2"
+        android:layout_below="@+id/name1"
+        android:layout_alignRight="@+id/name1"
+        android:layout_alignEnd="@+id/name1"
+        android:layout_marginTop="54dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="find flames"
+        android:id="@+id/find"
+        android:layout_below="@+id/name1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="clickButton"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.05" />
+
+
+</LinearLayout>
